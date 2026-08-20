@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { GiMaterialsScience } from "react-icons/gi";
+//import { GiMaterialsScience } from "react-icons/gi";
 import { SiSecurityscorecard } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 
