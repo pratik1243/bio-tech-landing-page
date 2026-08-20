@@ -6,7 +6,7 @@ import techCardImg2 from "../../assets/images/cell-research.jpg";
 import { RiDnaLine } from "react-icons/ri";
 import { RiRobot2Line } from "react-icons/ri";
 import { GrAnalytics } from "react-icons/gr";
-import { MdOutlineBiotech } from "react-icons/md";
+//import { MdOutlineBiotech } from "react-icons/md";
 import { LuMicroscope } from "react-icons/lu";
 
 const TechSection = ({ activeSection, removeSection, breakpoint }) => {

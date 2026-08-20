@@ -19,7 +19,6 @@ const Layout = () => {
   const [removeSection2, setRemoveSection2] = useState();
   const [removeSection3, setRemoveSection3] = useState();
   const [removeSection4, setRemoveSection4] = useState();
-  const [removeSection5, setRemoveSection5] = useState();
   const [breakpoint, setBreakpoint] = useState(getBreakpoint);
 
   const handleScroll = () => {
@@ -104,7 +103,6 @@ const Layout = () => {
           removeSection2,
           removeSection3,
           removeSection4,
-          removeSection5,
           breakpoint,
         }}
       />
