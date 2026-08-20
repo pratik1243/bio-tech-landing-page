@@ -61,31 +61,31 @@ const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
           className={`nav-link ${activeStep === 1 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 1, "home-section")}
         >
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </div>
         <div
           className={`nav-link ${activeStep === 2 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 2, "about-section")}
         >
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </div>
         <div
           className={`nav-link ${activeStep === 3 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 3, "tech-section")}
         >
-          <a href="#">Technology</a>
+          <a href="#technology">Technology</a>
         </div>
         <div
           className={`nav-link ${activeStep === 4 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 4, "capability-section")}
         >
-          <a href="#">Capabilities</a>
+          <a href="#capabilities">Capabilities</a>
         </div>
         <div
           className={`nav-link ${activeStep === 5 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 5, "impact-section")}
         >
-          <a href="#">Impact</a>
+          <a href="#impact">Impact</a>
         </div>
         {/* <div
           className={`nav-link ${activeStep ===6 ? "active" : ""}`}

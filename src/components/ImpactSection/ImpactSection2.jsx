@@ -23,28 +23,28 @@ const ImpactSection2 = ({ activeSection, removeSection, breakpoint }) => {
             <div className="icon-sec">
               <IoFlaskOutline size={20} color="#257bd1" />
             </div>
-            <h3></h3>
+            <h3> </h3>
             <span>Research Projects Completed</span>
           </div>
           <div className="impact-card sec2">
             <div className="icon-sec">
               <HiOutlineUsers size={20} color="#257bd1" />
             </div>
-            <h3></h3>
+            <h3> </h3>
             <span>Global Partnerships</span>
           </div>
           <div className="impact-card sec3">
             <div className="icon-sec">
               <AiOutlineGlobal size={21} color="#257bd1" />
             </div>
-            <h3></h3>
+            <h3> </h3>
             <span>Countries Reached</span>
           </div>
           <div className="impact-card sec4">
             <div className="icon-sec">
               <IoDocumentTextOutline size={21} color="#257bd1" />
             </div>
-            <h3></h3>
+            <h3> </h3>
             <span>Patents Filed Worldwide</span>
           </div>
         </div>
