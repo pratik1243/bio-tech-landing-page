@@ -12,12 +12,13 @@ import { LuMicroscope } from "react-icons/lu";
 const TechSection = ({ activeSection, removeSection, breakpoint }) => {
   return (
     <div
+      id="tech-section"
       className={`tech-section ${
-        !breakpoint && removeSection == 3
+        !breakpoint && removeSection === 3
           ? "reverse-animation5"
-          : !breakpoint && activeSection == 3
-            ? "animate-slide5"
-            : ""
+          : !breakpoint && activeSection === 3
+          ? "animate-slide5"
+          : ""
       }`}
     >
       <div className="tech-section-1">
@@ -34,7 +35,12 @@ const TechSection = ({ activeSection, removeSection, breakpoint }) => {
       <div className="tech-section-2">
         <div className="tech-cards-section">
           <div className="tech-card sec1">
-            <img src={techCardImg1} alt="tech-sec" loading="lazy" decoding="async" />
+            <img
+              src={techCardImg1}
+              alt="tech-sec"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="tech-inner-card">
               <LuMicroscope size={26} color="#2fa2eb" />
               <h3>Genetic Engineering</h3>
@@ -42,7 +48,12 @@ const TechSection = ({ activeSection, removeSection, breakpoint }) => {
             </div>
           </div>
           <div className="tech-card sec2">
-            <img src={techCardImg3} alt="tech-sec" loading="lazy" decoding="async" />
+            <img
+              src={techCardImg3}
+              alt="tech-sec"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="tech-inner-card">
               <RiRobot2Line size={28} color="#2fa2eb" />
               <h3>AI-Powered Discovery</h3>
@@ -52,7 +63,12 @@ const TechSection = ({ activeSection, removeSection, breakpoint }) => {
             </div>
           </div>
           <div className="tech-card sec3">
-            <img src={techCardImg2} alt="tech-sec" loading="lazy" decoding="async" />
+            <img
+              src={techCardImg2}
+              alt="tech-sec"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="tech-inner-card">
               <RiDnaLine size={29} color="#2fa2eb" />
               <h3>Cell & Protein Research</h3>
@@ -60,7 +76,12 @@ const TechSection = ({ activeSection, removeSection, breakpoint }) => {
             </div>
           </div>
           <div className="tech-card sec4">
-            <img src={techCardImg4} alt="tech-sec" loading="lazy" decoding="async" />
+            <img
+              src={techCardImg4}
+              alt="tech-sec"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="tech-inner-card">
               <GrAnalytics size={26} color="#2fa2eb" />
               <h3>Advanced Analytics</h3>

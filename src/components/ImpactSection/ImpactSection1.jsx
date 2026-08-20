@@ -5,12 +5,13 @@ import impactSec1Img from "../../assets/images/impact-bg-img.png";
 const ImpactSection1 = ({ activeSection, removeSection, breakpoint }) => {
   return (
     <div
+      id="impact-section"
       className={`impact-section-1 ${
-        !breakpoint && removeSection == 5
+        !breakpoint && removeSection === 5
           ? "reverse-animation6"
-          : !breakpoint && activeSection == 5
-            ? "animate-slide6"
-            : ""
+          : !breakpoint && activeSection === 5
+          ? "animate-slide6"
+          : ""
       }`}
     >
       <div className="inner-impact-section-1">

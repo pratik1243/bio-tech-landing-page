@@ -12,7 +12,7 @@ import CapabilitySec1 from "./CapabilitySection/CapabilitySec1";
 const AnimateContent = ({ activeStep }) => {
   return (
     <div className={`animate-content-sec slab-${activeStep.activeSection}`}>
-      {!activeStep.breakpoint && activeStep.activeSection == 1 && (
+      {!activeStep.breakpoint && activeStep.activeSection ===1 && (
         <>
           <HeroSection1
             activeSection={activeStep.activeSection}
@@ -42,7 +42,7 @@ const AnimateContent = ({ activeStep }) => {
         </>
       )}
 
-      {!activeStep.breakpoint && activeStep.activeSection == 2 && (
+      {!activeStep.breakpoint && activeStep.activeSection ===2 && (
         <>
           <AboutSection1
             activeSection={activeStep.activeSection}
@@ -72,7 +72,7 @@ const AnimateContent = ({ activeStep }) => {
         </>
       )}
 
-      {!activeStep.breakpoint && activeStep.activeSection == 3 && (
+      {!activeStep.breakpoint && activeStep.activeSection ===3 && (
         <TechSection
           activeSection={activeStep.activeSection}
           removeSection={activeStep.removeSection2}
@@ -88,7 +88,7 @@ const AnimateContent = ({ activeStep }) => {
         />
       )}
 
-      {!activeStep.breakpoint && activeStep.activeSection == 4 && (
+      {!activeStep.breakpoint && activeStep.activeSection ===4 && (
         <>
           <CapabilitySec1
             activeSection={activeStep.activeSection}
@@ -118,7 +118,7 @@ const AnimateContent = ({ activeStep }) => {
         </>
       )}
 
-      {!activeStep.breakpoint && activeStep.activeSection == 5 && (
+      {!activeStep.breakpoint && activeStep.activeSection ===5 && (
         <>
           <ImpactSection1
             activeSection={activeStep.activeSection}

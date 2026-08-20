@@ -1647,7 +1647,7 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  background-color: #eff7ff;
+  background-color: #eff4f9;
   display: grid;
   place-content: center;
 }
@@ -1756,8 +1756,8 @@ body {
 .capability-inner-section .capability-dot-line .dot-line {
   position: absolute;
   background-color: #2fa2eba6;
-  height: 1.4px;
-  top: 50%;
+  height: 1.5px;
+  top: 50.5%;
   left: 50%;
   width: 0%;
   transform: translate(-50%, -50%);

@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import AnimateContent from "./AnimateContent";
 
 const getBreakpoint = () => {
-  if (typeof window === "undefined") {
+  if (typeof window == "undefined") {
     return false;
   }
 
@@ -92,6 +92,8 @@ const Layout = () => {
       <Navbar
         activeStep={activeSection}
         ref={containerRef}
+        breakpoint={breakpoint}
+        setActiveSection={setActiveSection}
       />
 
       <AnimateContent

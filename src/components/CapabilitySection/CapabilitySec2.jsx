@@ -12,9 +12,9 @@ const CapabilitySec2 = ({ removeSection, activeSection, breakpoint }) => {
   return (
     <div
       className={`capability-section2 ${
-        !breakpoint && removeSection == 4
+        !breakpoint && removeSection ===4
           ? "reverse-animation8"
-          : !breakpoint && activeSection == 4
+          : !breakpoint && activeSection ===4
             ? "animate-slide8"
             : ""
       }`}

@@ -3,16 +3,25 @@ import navLogo from "../assets/images/nexus-nav-logo.png";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({ activeStep, ref }) => {
+const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function onNavClick(e, id) {
+  function onNavClick(e, id, scrollId) {
     e.preventDefault();
-    let currentSection = ref?.current[id];
-    currentSection?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
+    if (breakpoint) {
+      document.querySelector(`#${scrollId}`)?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      setMenuOpen(false);
+      setActiveSection(id)
+    } else {
+      let currentSection = ref?.current[id];
+      currentSection?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
   }
 
   return (
@@ -49,40 +58,40 @@ const Navbar = ({ activeStep, ref }) => {
           <IoClose size={24} />
         </div>
         <div
-          className={`nav-link ${activeStep == 1 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 1)}
+          className={`nav-link ${activeStep === 1 ? "active" : ""}`}
+          onClick={(e) => onNavClick(e, 1, "home-section")}
         >
-          <a href="">Home</a>
+          <a href="#">Home</a>
         </div>
         <div
-          className={`nav-link ${activeStep == 2 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 2)}
+          className={`nav-link ${activeStep === 2 ? "active" : ""}`}
+          onClick={(e) => onNavClick(e, 2, "about-section")}
         >
-          <a href="">About</a>
+          <a href="#">About</a>
         </div>
         <div
-          className={`nav-link ${activeStep == 3 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 3)}
+          className={`nav-link ${activeStep === 3 ? "active" : ""}`}
+          onClick={(e) => onNavClick(e, 3, "tech-section")}
         >
-          <a href="">Technology</a>
+          <a href="#">Technology</a>
         </div>
         <div
-          className={`nav-link ${activeStep == 4 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 4)}
+          className={`nav-link ${activeStep === 4 ? "active" : ""}`}
+          onClick={(e) => onNavClick(e, 4, "capability-section")}
         >
-          <a href="">Capabilities</a>
+          <a href="#">Capabilities</a>
         </div>
         <div
-          className={`nav-link ${activeStep == 5 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 5)}
+          className={`nav-link ${activeStep === 5 ? "active" : ""}`}
+          onClick={(e) => onNavClick(e, 5, "impact-section")}
         >
-          <a href="">Impact</a>
+          <a href="#">Impact</a>
         </div>
         {/* <div
-          className={`nav-link ${activeStep == 6 ? "active" : ""}`}
+          className={`nav-link ${activeStep ===6 ? "active" : ""}`}
           onClick={(e) => onNavClick(e, 6)}
         >
-          <a href="">Contact</a>
+          <a href="#">Contact</a>
         </div> */}
       </div>
     </div>

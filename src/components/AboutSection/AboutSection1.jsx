@@ -3,12 +3,13 @@ import React from "react";
 const AboutSection1 = ({ activeSection, removeSection, breakpoint }) => {
   return (
     <div
+      id="about-section"
       className={`about-section-1 ${
-        !breakpoint && removeSection == 2
+        !breakpoint && removeSection === 2
           ? "reverse-animation3"
-          : !breakpoint && activeSection == 2
-            ? "animate-slide3"
-            : ""
+          : !breakpoint && activeSection === 2
+          ? "animate-slide3"
+          : ""
       }`}
     >
       <div className="about-inner-sec1">

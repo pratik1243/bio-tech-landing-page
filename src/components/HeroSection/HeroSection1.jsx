@@ -5,10 +5,11 @@ import { IoFlaskOutline } from "react-icons/io5";
 const HeroSection1 = ({ removeSection, activeSection, breakpoint }) => {
   return (
     <div
+      id="hero-section"
       className={`hero-section-1 ${
-        !breakpoint && removeSection == 1
+        !breakpoint && removeSection === 1
           ? "reverse-animation1"
-          : !breakpoint && activeSection == 1
+          : !breakpoint && activeSection === 1
           ? "animate-slide1"
           : ""
       }`}
@@ -22,8 +23,12 @@ const HeroSection1 = ({ removeSection, activeSection, breakpoint }) => {
           commitment to human well-being.
         </p>
         <div className="hero-cta-section">
-          <button className="hero-cta"><IoFlaskOutline size={17} /> Discover Science</button>
-          <button className="hero-cta second"><LuHandshake size={17} /> Partner With Us</button>
+          <button className="hero-cta">
+            <IoFlaskOutline size={17} /> Discover Science
+          </button>
+          <button className="hero-cta second">
+            <LuHandshake size={17} /> Partner With Us
+          </button>
         </div>
       </div>
     </div>

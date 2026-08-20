@@ -3,12 +3,13 @@ import React from "react";
 const CapabilitySec1 = ({ removeSection, activeSection, breakpoint }) => {
   return (
     <div
+      id="capability-section"
       className={`capability-section1 ${
-        !breakpoint && removeSection == 4
+        !breakpoint && removeSection === 4
           ? "reverse-animation7"
-          : !breakpoint && activeSection == 4
-            ? "animate-slide7"
-            : ""
+          : !breakpoint && activeSection === 4
+          ? "animate-slide7"
+          : ""
       }`}
     >
       <div className="capability-inner-sec1">
@@ -18,7 +19,8 @@ const CapabilitySec1 = ({ removeSection, activeSection, breakpoint }) => {
           <h4 className="head-txt2">Biotech Solutions</h4>
         </div>
         <p className="para-txt">
-          From early research to scalable manufacturing, we provide integrated capabilities to accelerate your innovation journey.
+          From early research to scalable manufacturing, we provide integrated
+          capabilities to accelerate your innovation journey.
         </p>
       </div>
     </div>
