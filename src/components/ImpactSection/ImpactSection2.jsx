@@ -8,9 +8,9 @@ const ImpactSection2 = ({ activeSection, removeSection, breakpoint }) => {
   return (
     <div
       className={`impact-section-2 ${
-        !breakpoint && removeSection ===5
+        !breakpoint && removeSection === 5
           ? "reverse-animation6"
-          : !breakpoint && activeSection ===5
+          : !breakpoint && activeSection === 5
             ? "animate-slide6"
             : ""
       }`}

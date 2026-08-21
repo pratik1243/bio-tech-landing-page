@@ -2305,6 +2305,10 @@ body {
   .hero-section-1 .head-txt-2 {
     font-size: 36px;
   }
+
+  .impact-section-1 .impact-card-sec {
+    left: 20px;
+  }
 }
 
 @media (max-width: 440px) {
