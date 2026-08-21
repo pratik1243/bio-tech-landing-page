@@ -9,11 +9,14 @@ const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
   function onNavClick(e, id, scrollId) {
     e.preventDefault();
     if (breakpoint) {
-      document.querySelector(`#${scrollId}`)?.scrollIntoView({
-        behavior: "smooth",
-        // block: "start",
-        top: 100
-      });
+       let node = document.getElementById(scrollId);
+       const scrollOptions = {
+         top: node.offsetTop - 100,
+         behavior: "smooth",
+       };
+       if (typeof window !== "undefined") {
+        window.scrollTo(scrollOptions);
+       }
       setMenuOpen(false);
       setActiveSection(id)
     } else {
