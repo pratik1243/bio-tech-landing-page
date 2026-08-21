@@ -12,7 +12,7 @@ const getBreakpoint = () => {
 
 const Layout = () => {
   const containerRef = useRef([]);
-  const contentCount = [1, 2, 3, 4, 5, 6];
+  const contentCount = [1, 2, 3, 4, 5];
   const [activeSection, setActiveSection] = useState(1);
   const [removeSection, setRemoveSection] = useState();
   const [removeSection1, setRemoveSection1] = useState();
