@@ -11,7 +11,7 @@ const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
     if (breakpoint) {
        let node = document.getElementById(scrollId);
        const scrollOptions = {
-         top: node.offsetTop - 100,
+         top: id === 3 ? node.offsetTop + 20 : node.offsetTop - 100,
          behavior: "smooth",
        };
        if (typeof window !== "undefined") {
