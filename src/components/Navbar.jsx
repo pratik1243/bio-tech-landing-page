@@ -59,7 +59,7 @@ const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
         </div>
         <div
           className={`nav-link ${activeStep === 1 ? "active" : ""}`}
-          onClick={(e) => onNavClick(e, 1, "home-section")}
+          onClick={(e) => onNavClick(e, 1, "hero-section")}
         >
           <a href="#home">Home</a>
         </div>
