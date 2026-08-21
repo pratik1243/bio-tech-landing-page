@@ -12,7 +12,7 @@ const Navbar = ({ activeStep, ref, breakpoint, setActiveSection }) => {
       document.querySelector(`#${scrollId}`)?.scrollIntoView({
         behavior: "smooth",
         // block: "start",
-        top: -100
+        top: 100
       });
       setMenuOpen(false);
       setActiveSection(id)
